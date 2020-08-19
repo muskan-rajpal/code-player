@@ -1,208 +1,123 @@
-
-
+OCTYPE html>
 <html>
+<head>
+  <title>Code Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="style.css" rel="stylesheet" />
+  
+</head>
 
-    <head>
-        
-        <title>Code Player</title>
- 
-        <script type="text/javascript" src="jquery-min.js"></script>
-        
-        <style type="text/css">
-        
-            body {
-                
-                font-family: sans-serif;
-                padding:0;
-                margin:0;
-                
-            }
-            
-            #header {
-                
-                width:100%;
-                background-color: #EEEEEE;
-                padding:5px;
-                height: 30px;
-                
-            }
-            
-            #logo {
-                
-                float:left;
-                font-weight: bold;
-                font-size: 120%;
-                padding: 3px 5px;
-                
-            }
-            
-            #buttonContainer {
-                
-                width:233px;
-                margin: 0 auto;
-                
-            }
-            
-            .toggleButton {
-                
-                float:left;
-                border: 1px solid grey;
-                padding: 6px;
-                border-right: none;
-                font-size: 90%;
-                
-            }
-        
-            #html {
-                
-                border-top-left-radius: 4px;
-                border-bottom-left-radius: 4px;
-                
-            }
-            
-            #output {
-                
-                border-top-right-radius: 4px;
-                border-bottom-right-radius: 4px;
-                border-right: 1px solid grey;
-                
-            }
-            
-            .active {
-                
-                background-color: #E8F2FF;
-                
-            }
-            
-            .highlightedButton {
-                
-                background-color: grey;
-                
-            }
-            
-            textarea {
-                
-                resize: none;
-                border-top: none;
-                border-color: grey;
-                
-            }
-            
-            .panel {
-                
-                float:left;
-                width: 50%;
-                border-left: none;
-            }
-            
-            iframe {
-                
-                border:none;
-                
-            }
-            
-            .hidden {
-                
-                display: none;
-                
-            }
-        
-        </style>
-        
-    </head>
-
-    <body>
-        
-        <div id="header">
-        
-            <div id="logo">
-            
-                CodePlayer
-                
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo-final.png"></a>
             </div>
-            
-            <div id="buttonContainer">
-                
-                <div class="toggleButton active" id="html">HTML</div>
-                
-                <div class="toggleButton" id="css">CSS</div>
-                
-                <div class="toggleButton" id="javascript">JavaScript</div>
-                
-                <div class="toggleButton active" id="output">Output</div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#foot">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="home">
+        <div class="landing-text">
+            <h1>Code Player</h1>
+            <h3>Code Your First Webpage!</h3>
+            <a href="code.html" class="btn btn-default btn-lg" target="_blank">Start Coding</a>
+        </div>
+    </div>
+    <div class="padding" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/abc-final.jpg">
+            </div>
+            <div class="col-sm-6 text-center">
+                <h2>All About Code Player</h2>
+                <p class="lead">Code Player is a platform where beginners who are willing to learn front-end can code their webpage and make it look interesting.</p>
+                <p class="lead">You can code HTML, CSS and Javascript code simultaneously on the same screen and can see the output dynamically without opening the browser!</p>
+
             
             </div>
-        
         </div>
-        
-        <div id="bodyContainer">
-        
-            <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World!</p></textarea>
-            
-            <textarea id="cssPanel" class="panel hidden">p { color: green; }</textarea>
-            
-            <textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Hello Peeps!";</textarea>
-            
-            <iframe id="outputPanel" class="panel"></iframe>
-        
-        
+    </div>   
+
+    </div>
+    <div class="padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>Built with Sass</h4>
+                <p>Sass (which stands for 'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more. It also helps to keep things organised and allows you to create style sheets faster.</p>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <img src="img/sass-final.png" class="img-responsive">
+                
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4>And Less</h4>
+                <p>Less (which stands for Leaner Style Sheets) is a backwards-compatible language extension for CSS. This is the official documentation for Less, the language and Less. js, the JavaScript tool that converts your Less styles to CSS styles.</p>
+                
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <img src="img/less-final.png" class="img-responsive">
+                
+            </div>
         </div>
-        
-        <script type="text/javascript">
-            
-            function updateOutput() {
-                
-                $("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
-                
-                document.getElementById("outputPanel").contentWindow.eval($("#javascriptPanel").val());
-                
-                
-                
-            }
-            
-            $(".toggleButton").hover(function() {
-                
-                $(this).addClass("highlightedButton");
-                
-            }, function() {
-                
-                $(this).removeClass("highlightedButton");
-                
-            });
-            
-            $(".toggleButton").click(function() {
-                
-                $(this).toggleClass("active");
-                
-                $(this).removeClass("highlightedButton");
-                
-                var panelId = $(this).attr("id") + "Panel";
-                
-                $("#" + panelId).toggleClass("hidden");
-                
-                var numberOfActivePanels = 4 - $('.hidden').length;
-                
-                $(".panel").width(($(window).width() / numberOfActivePanels) - 10);
-                
-            })
-            
-            $(".panel").height($(window).height() - $("#header").height() - 15);
-            
-            $(".panel").width(($(window).width() / 2) - 10);
-            
-            updateOutput();
-            
-            $("textarea").on('change keyup paste', function() {
+    </div>
+    </div>
+    <div id="fixed">
+        .
+    </div>
+    <div class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Here's a cool thing about Code Player...</h3>
+                    <p>While coding a webpage, user generally needs to open the web browser to check out the output. Code Player saves your effort of opening the browser everytime to check the output.</p>
+                    <p>Code in HTML, CSS and Javascript simultaneously to make your webpage awesome. So now, get ready to make your first webpag in a lot easy and fun way!</p>
     
-                updateOutput();
                 
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/code-final.jpg">
+                </div>
                 
-            });
-            
-    
+            </div>
+        </div>  
+        <footer class="container-fluid text-center" id="foot">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Contact Us</h3>
+                    <br>
+                    <h4>Contact Info: © Muskan Rajpal</h4>
 
-        </script>
-        
-    </body>
-
-</html>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Connect</h3>
+                    <a href="https://www.instagram.com/xo_muskan_xo/" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://github.com/muskan-rajpal" class="fa fa-github" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/muskan-rajpal-65b263188/" class="fa fa-linkedin" target="_blank"></a>
+                    
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/b.png" class="icon">
+                    
+                </div>
+            </div>
+        </footer>
